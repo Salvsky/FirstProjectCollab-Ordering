@@ -56,12 +56,19 @@
                             </tr>
 
                             <tr>
-                                <td><input type="text" name="" placeholder="Firstname"></td>
-                                <td><input type="text" name="" placeholder="Complete Address"></td>
+                                <td><input type="email" name="" placeholder="Email"></td>
+                                <td><input type="password" name="" placeholder="Password"></td>
                             </tr>
 
-
+                            <tr>
+                                <td><input type="text" name="" placeholder="Contact Number"></td>
+                                <td><input type="password" name="" placeholder="Confirm Password"></td>
+                            </tr>
                         </table>
+
+                            <div class="text-center">
+                                <input type="submit" name="" value="Register">
+                            </div>
                         </form>
 
                     </div>

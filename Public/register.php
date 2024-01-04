@@ -16,6 +16,7 @@
 </head>
 <body>
         <div class="header">
+        
             <div class="business-title-shadow">Street Bites</div>
             <div class="left-section">
                 <img src="../images/logo.jpg" class="logo">
@@ -28,9 +29,46 @@
         <div class="main-content">
             <div class="wrapper">
 
+                <div class="signup-form">
+                    <div class="page-title text-center">
+                        SIGN UP NEW USER
+                    </div>
+                
+                    <div class="form">
+                        <form action="#" method="POST">
+                        <table class="tbl-form">
+                            <tr>
+                                <td><input type="text" name="" placeholder="Firstname"></td>
+                                <td><input type="text" name="" placeholder="Complete Address"></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" name="" placeholder="Lastname"></td>
+                                <td>Gender
+                                    <td><input type="radio" name="" value="Male">Male</td>
+                                    <td><input type="radio" name="" value="Female">Female</td>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" name="" placeholder="Username"></td>
+                                <td>Birthday<input type="date" name="" id=""></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" name="" placeholder="Firstname"></td>
+                                <td><input type="text" name="" placeholder="Complete Address"></td>
+                            </tr>
 
 
-            
+                        </table>
+                        </form>
+
+                    </div>
+
+                </div>
+
+
             </div>
 
         </div>

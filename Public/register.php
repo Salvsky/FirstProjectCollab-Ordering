@@ -33,45 +33,48 @@
                     <div class="page-title text-center">
                         SIGN UP NEW USER
                     </div>
-                
-                    <div class="form">
-                        <form action="#" method="POST">
-                        <table class="tbl-form">
-                            <tr>
-                                <td><input type="text" name="" placeholder="Firstname"></td>
-                                <td><input type="text" name="" placeholder="Complete Address"></td>
-                            </tr>
 
-                            <tr>
-                                <td><input type="text" name="" placeholder="Lastname"></td>
-                                <td>Gender
-                                    <td><input type="radio" name="" value="Male">Male</td>
-                                    <td><input type="radio" name="" value="Female">Female</td>
-                                </td>
-                            </tr>
+                    <div class="messages">
+                            
+                    </div>
 
-                            <tr>
-                                <td><input type="text" name="" placeholder="Username"></td>
-                                <td>Birthday<input type="date" name="" id=""></td>
-                            </tr>
+                    <div class="main-form">
 
-                            <tr>
-                                <td><input type="email" name="" placeholder="Email"></td>
-                                <td><input type="password" name="" placeholder="Password"></td>
-                            </tr>
+                        
 
-                            <tr>
-                                <td><input type="text" name="" placeholder="Contact Number"></td>
-                                <td><input type="password" name="" placeholder="Confirm Password"></td>
-                            </tr>
-                        </table>
+                        <div class="left-form">
+                            <form action="" method="post">
+                                <input type="text" name="FORMFirstname" placeholder="Firstname" required> <br>
+                                <input type="text" name="FORMLastname" placeholder="Lastname" required> <br>
+                                <input type="text" name="FORMUsername" placeholder="Username" required><br>
+                                <input type="email" name="FORMEmail" placeholder="Email Address" required><br>
+                                <input type="text" name="FORMContact" placeholder="Contact" required><br>
+                        </div>
 
-                            <div class="text-center">
-                                <input type="submit" name="" value="Register">
-                            </div>
-                        </form>
+                        <div class="right-form text-center">
+                                <input type="text" name="" placeholder="Complete Address" required> <br>
+                                <label for="" class="gender">Gender</label>
+                                    <input type="radio" name="" value="Male">Male
+                                    <input type="radio" name="" value="Female">Female <br>
+                                <label class="birthday"for="">Birthday</label>
+                                    <input type="date" name="" id=""><br>
+                                <input type="password" name="" placeholder="Password" required><br>
+                                <input type="password" name="" placeholder="Confirm Password" required><br>
+                        </div>
 
                     </div>
+                                <br> <br>
+                                <div class="register-section">
+                                    <div class="button-div text-center">
+                                    <input type="submit" name ="FORMRegister" value="REGISTER" class="btn-register">
+                                    </div>
+                                </form>
+
+                                <div class="suggestion">
+                                    <p class="account-message">Already Have an account? <a href="#"><span class="login-link">Log in</span></a></p>
+                                </div>
+                            </form>
+                        </div>
 
                 </div>
 
@@ -82,3 +85,7 @@
 
 </body>
 </html>
+
+<?php
+
+?>

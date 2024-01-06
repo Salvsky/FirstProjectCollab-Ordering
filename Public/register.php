@@ -1,19 +1,20 @@
-<?php include_once('../config/connection.php');?>
+<?php include('../config/connection.php');?>
 
 <?php
     if(isset($_POST['FORMRegister'])){
-        $firstname = $_POST['FORMFirstname'];
-        $lastname = $_POST['FORMLastname'];
-        $username = $_POST['FORMUsername'];
-        $email = $_POST['FORMEmail'];
-        $contact = $_POST['FORMContact'];
-        $address = $_POST['FORMAddress'];
+        $firstname = trim($_POST['FORMFirstname']);
+        $lastname = trim($_POST['FORMLastname']);
+        $username = trim($_POST['FORMUsername']);
+        $email = trim($_POST['FORMEmail']);
+        $contact = trim($_POST['FORMContact']);
+        $address = trim($_POST['FORMAddress']);
         $gender = $_POST['FORMGender'];
         $birthday = date('Y-m-d', strtotime($_POST['FORMBirthday']));
-        $password = md5($_POST['FORMPassword']);
-        $confirmpassword = md5($_POST['FORMConfirmpassword']);
+        $password = trim(md5($_POST['FORMPassword']));
+        $confirmpassword = trim(md5($_POST['FORMConfirmpassword']));
 
-       if($password === $confirmpassword){
+        // && empty($firstname && $lastname && $username && $email && $contact && $address && $gender && $birthday && $password && $confirmpassword
+       if($password === $confirmpassword && empty($firstname && $lastname && $username && $email && $contact && $address && $gender && $birthday && $password && $confirmpassword) == false){
             $queryInsert = "INSERT INTO tbl_users SET
                 first_name = '$firstname',
                 last_name = '$lastname',
@@ -29,15 +30,17 @@
             $sqlInsert = mysqli_query($connection, $queryInsert);
 
             if($sqlInsert == true){
-                $_SESSION['registration'] = "Account Registration Completed";
+                echo ("<script>alert('Account Successfully Registered')</script>");
                 header("location:".SITEURL.'Public/login.php');
 
             }else{
-                $_SESSION['registration'] = "Account Registration Failed";
+                echo ("<script>alert('Account Registration Failed')</script>");
             }
        }else{
+        echo ("<script>alert('Account Registration Failed')</script>");
        }
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +78,7 @@
                     </div>
 
                     <div class="messages text-center">
-                            Account Successful
+                        
                     </div>
 
                     <div class="main-form">
@@ -117,7 +120,7 @@
                                 </form>
 
                                 <div class="suggestion">
-                                    <p class="account-message">Already Have an account? <a href="#"><span class="login-link">Log in</span></a></p>
+                                    <p class="account-message">Already Have an account? <a href="login.php"><span class="login-link">Log in</span></a></p>
                                 </div>
                             </form>
                         </div>

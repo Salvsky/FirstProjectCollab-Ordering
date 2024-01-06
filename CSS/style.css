@@ -182,10 +182,9 @@ input[type=date]{
 
 .messages{
     width: 90%;
-    border: 1px solid black;
-    height: 10%;
+    height: 5%;
     margin:0% auto;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 p{
@@ -270,8 +269,7 @@ a{
 .middle-section{
     display: flex;
     flex-direction: column;
-    margin: 3% auto;
-    border: 1px solid black;
+    margin: 2% auto;
     width: 70%;
     height: 30%;
     justify-content: center;
@@ -281,6 +279,7 @@ a{
 .middle-section input{
     margin: 3%;
     background-color: #D9D9D9;
+    padding: 1% 20% 1% 10% ;
 }
 
 .login-page-title{
@@ -309,4 +308,14 @@ a{
 }
 
 .login-section{
+    width: 90%;
+    margin: 0% auto;
+}
+
+.btn-login{
+    padding: 10px 30%;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: #FBBC05;
+    cursor: pointer;
 }

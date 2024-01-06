@@ -74,8 +74,8 @@
                         SIGN UP NEW USER
                     </div>
 
-                    <div class="messages">
-                            
+                    <div class="messages text-center">
+                            Account Successful
                     </div>
 
                     <div class="main-form">

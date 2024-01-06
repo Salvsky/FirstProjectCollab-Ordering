@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Signup Page</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+        <div class="first-container">
+        
+            <!-- <div class="business-title-shadow">Street Bites</div> -->
+            <div class="left-section">
+                <img src="../images/logo.jpg" class="logo">
+            </div>
+            <div class="right-section">
+                <div class="business-title"><p class="title-name">Street Bites</p></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="wrapper">
+
+                <div class="content">
+                        <div class="featured">
+                            Featured Contents
+                        </div>
+
+                        <div class="login-content">
+                            <div class="login-page-title text-center">
+                            LOGIN USER ACCOUNT
+                        </div>
+
+                        <div class="messages text-center">
+                            Login Successful
+                        </div>
+
+                        <div class="middle-section">
+                            <input type="text" name="FORMUsername" placeholder="Username">
+                               <i class="fa-solid fa-user user-icon"></i>
+                            <input type="password" name="FORMPassword" placeholder="Password">
+                                <i class="fa-solid fa-key user-pass"></i>
+                        </div>
+                        
+                        <div class="login-section">
+
+                        
+                        </div>
+
+                </div>
+
+            </div>
+        </div>
+
 </body>
 </html>
